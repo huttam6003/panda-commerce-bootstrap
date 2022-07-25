@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda-Commerce</title>
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="container">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar fixed-top navbar-expand-lg bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -25,15 +26,15 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#backpack">
                                 Backpack
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Subscribe</a>
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                         </li>
                 </div>
             </div>
@@ -44,7 +45,7 @@
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <!-- First Item -->
-                    <div class="carousel-item active border rounded bg-info p-5">
+                    <div class="carousel-item active border rounded panda-panda-bg-info p-5">
                         <div class="row">
                             <div class="col-lg-7 d-flex align-items-center">
                                 <div>
@@ -61,7 +62,7 @@
                         </div>
                     </div>
                     <!-- Second Item -->
-                    <div class="carousel-item active border rounded bg-info p-5">
+                    <div class="carousel-item active border rounded panda-bg-info p-5">
                         <div class="row">
                             <div class="col-lg-7 d-flex align-items-center">
                                 <div>
@@ -78,7 +79,7 @@
                         </div>
                     </div>
                     <!-- Third Item -->
-                    <div class="carousel-item active border rounded bg-info p-5">
+                    <div class="carousel-item active border rounded panda-bg-info p-5">
                         <div class="row">
                             <div class="col-lg-7 d-flex align-items-center">
                                 <div>
@@ -144,7 +145,7 @@
         </section>
         <!-- Categroies End -->
         <!-- Shoes section start -->
-        <section class="container my-5">
+        <section id="shoes" class="container my-5">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -194,7 +195,7 @@
         <!-- Shoes section end -->
 
         <!-- Backpack section Start -->
-        <section class="container my-5">
+        <section id="backpack" class="container my-5">
             <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ">
                 <div class="col">
@@ -245,7 +246,26 @@
             </div>
         </section>
         <!-- Backpack section end -->
+        <!-- Subscribe Start -->
+        <section id="subscribe" style="height:300px"
+            class="container d-flex justify-content-center align-items-center panda-bg-info rounded-3 ">
+            <div>
+                <h1>LET'S STAY IN TOUCH</h1>
+                <p>Get updates on sales, specials and more</p>
+                <form>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+        </section>
+        <!-- Subscribe End -->
     </main>
+    <footer class="mt-5 text-center">
+        <p><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
+    </footer>
     <!-- Link Bootstrap -->
     <script src="bootstrap/bootstrap.min.js"></script>
 </body>
